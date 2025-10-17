@@ -40,7 +40,7 @@ echo "Making Kernel:"
 echo "-------------------"
 echo
 
-rm -rf out
+# rm -rf out
 
 make -j$(nproc --all) CC=clang O=out ARCH=arm64 O=out nio_defconfig
 
